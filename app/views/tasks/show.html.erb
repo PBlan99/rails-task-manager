@@ -1,0 +1,6 @@
+<p><%= "Details for #{@task.title}: #{@task.details}" %></p>
+<p><%= link_to "Edit this task", edit_task_path %></p>
+<p><%= link_to "Delete this task", delete_task_path,
+      method: :delete,
+      data: { confirm: "Are you sure?" } %></p>
+
